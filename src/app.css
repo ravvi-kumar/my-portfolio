@@ -1,29 +1,43 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
-/* Custom styles for smooth scrolling and better UX */
-html {
-	scroll-behavior: smooth;
-}
-
+/* Custom styles for better UX */
 body {
 	font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar for light theme */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #1f2937;
+	background: #f9fafb;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #4b5563;
-	border-radius: 5px;
+	background: #d1d5db;
+	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #6b7280;
+	background: #9ca3af;
+}
+
+@layer base {
+	body {
+		@apply bg-background font-gilroy text-text;
+	}
+}
+
+/* Gilroy font from Google Fonts alternative - using similar weight mappings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+	--color-background: #FFF;
+	--color-primary: oklch(97% 0.001 106.424);
+	--color-secondary: oklch(92.5% 0.005 80);
+	--color-text: #000000;
+	--radius-card: 20px;
+	--font-gilroy: "Gilroy", "Inter", "system-ui", "-apple-system", "sans-serif";
 }
