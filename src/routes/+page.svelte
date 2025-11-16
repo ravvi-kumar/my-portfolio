@@ -1,13 +1,13 @@
 <script lang="ts">
-	import About from "$lib/components/about.svelte";
-	import Contact from "$lib/components/contact.svelte";
-import Header from "$lib/components/header.svelte";
-	import Intro from "$lib/components/intro.svelte";
-	import Portrait from "$lib/components/portrait.svelte";
-	import Projects from "$lib/components/projects.svelte";
-	import Social from "$lib/components/social.svelte";
+	import About from "$lib/components/sections/about.svelte";
+	import Contact from "$lib/components/sections/contact.svelte";
+	import Header from "$lib/components/sections/header.svelte";
+	import Intro from "$lib/components/sections/intro.svelte";
+	import Portrait from "$lib/components/sections/portrait.svelte";
+	import Projects from "$lib/components/sections/projects.svelte";
+	import Social from "$lib/components/sections/social.svelte";
 
-	// Portfolio homepage for Julia Huang
+	// Portfolio homepage for Ravi Chopra
 </script>
 
 <div class="min-h-screen bg-background p-4 md:p-6">
