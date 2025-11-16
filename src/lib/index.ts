@@ -5,8 +5,6 @@ export * from './types/index';
 export * from './data/portfolio';
 
 // Re-export common components
-export { default as Card } from './components/common/Card.svelte';
-export { default as Button } from './components/common/Button.svelte';
 export { default as DecorativeIcon } from './components/common/DecorativeIcon.svelte';
 export { default as ArrowIcon } from './components/common/ArrowIcon.svelte';
 

@@ -23,7 +23,3 @@ export interface PortfolioData {
   social: SocialLink[];
   projects: Project[];
 }
-
-export type IconSize = 'small' | 'medium' | 'large';
-export type ButtonVariant = 'primary' | 'secondary' | 'outline';
-export type CardVariant = 'default' | 'elevated' | 'outlined';
