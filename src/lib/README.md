@@ -35,31 +35,37 @@ src/lib/
 ## Key Improvements
 
 ### 1. **Type Safety**
+
 - Added comprehensive TypeScript interfaces in `types/index.ts`
 - Type-safe props for all components
 - Proper data contracts for portfolio content
 
 ### 2. **Component Organization**
+
 - **Common Components**: Reusable UI elements (Card, Button, Icons)
 - **Section Components**: Page-specific sections
 - Clear separation of concerns
 
 ### 3. **Data-Driven Architecture**
+
 - Centralized portfolio data in `data/portfolio.ts`
 - Components consume data from single source of truth
 - Easy to update content without touching components
 
 ### 4. **Eliminated Code Duplication**
+
 - Extracted duplicate SVG into reusable `DecorativeIcon.svelte`
 - Created `ArrowIcon.svelte` for consistent arrow graphics
 - Common styling patterns extracted to utility classes
 
 ### 5. **Improved CSS Organization**
+
 - **Design Tokens**: Centralized design system values
 - **Component Styles**: Reusable utility classes
 - Better maintainability and consistency
 
 ### 6. **Fixed Naming Consistency**
+
 - Standardized all references to "Ravi Chopra"
 - Updated email, bio, and all placeholder content
 - Consistent branding across components
@@ -67,6 +73,7 @@ src/lib/
 ## Usage Examples
 
 ### Using the centralized data:
+
 ```typescript
 import { portfolioData } from '$lib/data/portfolio';
 
@@ -79,35 +86,40 @@ const projects = portfolioData.projects;
 ```
 
 ### Using common components:
+
 ```svelte
 <script>
-  import { Card, Button, DecorativeIcon } from '$lib/index';
+	import { Card, Button, DecorativeIcon } from '$lib/index';
 </script>
 
 <Card variant="elevated" padding="large">
-  <DecorativeIcon size="medium" opacity={0.3} />
-  <Button href="/contact">Get in Touch</Button>
+	<DecorativeIcon size="medium" opacity={0.3} />
+	<Button href="/contact">Get in Touch</Button>
 </Card>
 ```
 
 ## Component Props
 
 ### Card.svelte
+
 - `variant`: 'default' | 'elevated' | 'outlined'
 - `padding`: 'small' | 'medium' | 'large'
 - `class`: Additional CSS classes
 
 ### Button.svelte
+
 - `variant`: 'primary' | 'secondary' | 'outline'
 - `size`: 'small' | 'medium' | 'large'
 - `href`: Optional URL (renders as <a> if provided)
 - `disabled`: Boolean for disabled state
 
 ### DecorativeIcon.svelte
+
 - `size`: 'small' | 'medium' | 'large'
 - `opacity`: Number (0-1)
 
 ### ArrowIcon.svelte
+
 - `size`: 'small' | 'medium' | 'large'
 - `hover`: Boolean for hover effects
 
@@ -117,14 +129,14 @@ The portfolio data follows this structure:
 
 ```typescript
 interface PortfolioData {
-  personal: {
-    name: string;
-    title: string;
-    description: string;
-    email: string;
-  };
-  social: SocialLink[];
-  projects: Project[];
+	personal: {
+		name: string;
+		title: string;
+		description: string;
+		email: string;
+	};
+	social: SocialLink[];
+	projects: Project[];
 }
 ```
 

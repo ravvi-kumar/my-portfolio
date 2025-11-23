@@ -1,7 +1,7 @@
-<div class="rounded-card bg-primary overflow-hidden h-[400px] md:h-[426px]">
-    <enhanced:img
-        src="./portrait.jpeg" 
-        alt="Proffile Image"
-        class="w-full h-full object-cover object-center"
-    />
+<div class="h-[400px] overflow-hidden rounded-card bg-primary md:h-[426px]">
+	<enhanced:img
+		src="./portrait.jpeg"
+		alt="Proffile Image"
+		class="h-full w-full object-cover object-center"
+	/>
 </div>

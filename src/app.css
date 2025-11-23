@@ -3,7 +3,11 @@
 
 /* Custom styles for better UX */
 body {
-	font-family: 'Inter', system-ui, -apple-system, sans-serif;
+	font-family:
+		'Inter',
+		system-ui,
+		-apple-system,
+		sans-serif;
 }
 
 /* Custom scrollbar for light theme */
@@ -34,10 +38,10 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @theme {
-	--color-background: #FFF;
+	--color-background: #fff;
 	--color-primary: oklch(97% 0.001 106.424);
 	--color-secondary: oklch(92.5% 0.005 80);
 	--color-text: #000000;
 	--radius-card: 20px;
-	--font-gilroy: "Gilroy", "Inter", "system-ui", "-apple-system", "sans-serif";
+	--font-gilroy: 'Gilroy', 'Inter', 'system-ui', '-apple-system', 'sans-serif';
 }

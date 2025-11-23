@@ -4,18 +4,13 @@
 	$: socialLinks = portfolioData.social;
 </script>
 
-<div class="rounded-card bg-primary p-4 md:p-6 flex flex-col gap-6 md:gap-8 min-h-[120px]">
-    <!-- Social Links -->
-    <div class="flex gap-6 md:gap-12 flex-wrap text-sm md:text-base font-light uppercase mt-auto">
-        {#each socialLinks as link}
-            <a
-				href={link.url}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="social-link"
-			>
+<div class="flex min-h-[120px] flex-col gap-6 rounded-card bg-primary p-4 md:gap-8 md:p-6">
+	<!-- Social Links -->
+	<div class="mt-auto flex flex-wrap gap-6 text-sm font-light uppercase md:gap-12 md:text-base">
+		{#each socialLinks as link}
+			<a href={link.url} target="_blank" rel="noopener noreferrer" class="social-link">
 				{link.displayText || link.platform}
 			</a>
 		{/each}
-    </div>
+	</div>
 </div>

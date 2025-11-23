@@ -1,28 +1,28 @@
 <script lang="ts">
-  export let size: 'small' | 'medium' | 'large' = 'small';
-  export let hover: boolean = true;
+	export let size: 'small' | 'medium' | 'large' = 'small';
+	export let hover: boolean = true;
 
-  const sizeClasses = {
-    small: 'w-6 h-6 md:w-8 md:h-10',
-    medium: 'w-8 h-8 md:w-10 md:h-10',
-    large: 'w-10 h-10 md:w-12 md:h-12'
-  };
+	const sizeClasses = {
+		small: 'w-6 h-6 md:w-8 md:h-10',
+		medium: 'w-8 h-8 md:w-10 md:h-10',
+		large: 'w-10 h-10 md:w-12 md:h-12'
+	};
 
-  const hoverClasses = hover
-    ? 'transition-transform group-hover:translate-x-1 group-hover:-translate-y-1'
-    : '';
+	const hoverClasses = hover
+		? 'transition-transform group-hover:translate-x-1 group-hover:-translate-y-1'
+		: '';
 </script>
 
 <svg
-  class="{sizeClasses[size]} {hoverClasses}"
-  viewBox="0 0 38 38"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
+	class="{sizeClasses[size]} {hoverClasses}"
+	viewBox="0 0 38 38"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M9.23768 28.7625C8.743 28.2677 8.743 27.4656 9.23768 26.9711L26.0754 10.1333H15.2C14.5005 10.1333 13.9333 9.56623 13.9333 8.86667C13.9333 8.16712 14.5005 7.60001 15.2 7.60001H29.1333C29.4693 7.60001 29.7915 7.73346 30.0291 7.97101C30.2665 8.20856 30.4 8.53073 30.4 8.86667V22.8C30.4 23.4996 29.8328 24.0667 29.1333 24.0667C28.4339 24.0667 27.8667 23.4996 27.8667 22.8V11.9247L11.029 28.7625C10.5343 29.257 9.73234 29.257 9.23768 28.7625Z"
-    fill="black"
-  />
+	<path
+		fill-rule="evenodd"
+		clip-rule="evenodd"
+		d="M9.23768 28.7625C8.743 28.2677 8.743 27.4656 9.23768 26.9711L26.0754 10.1333H15.2C14.5005 10.1333 13.9333 9.56623 13.9333 8.86667C13.9333 8.16712 14.5005 7.60001 15.2 7.60001H29.1333C29.4693 7.60001 29.7915 7.73346 30.0291 7.97101C30.2665 8.20856 30.4 8.53073 30.4 8.86667V22.8C30.4 23.4996 29.8328 24.0667 29.1333 24.0667C28.4339 24.0667 27.8667 23.4996 27.8667 22.8V11.9247L11.029 28.7625C10.5343 29.257 9.73234 29.257 9.23768 28.7625Z"
+		fill="black"
+	/>
 </svg>
